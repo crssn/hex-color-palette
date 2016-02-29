@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colors</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            height: 100vh;
+        }
+        .block {
+            -webkit-flex: 1;
+            flex: 1;
+            vertical-align: middle;
+            line-height: 100vh;
+            color: rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .lighten,
+        .darken {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 30%;
+        }
+        .lighten {
+            top: 20;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .darken {
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="lighten"></div>
+
+        <div class="container">
+            <div class="block" style="background-color: #27ae60;">#27ae60</div>
+            <div class="block" style="background-color: #2ecc73;">#2ecc73</div>
+            <div class="block" style="background-color: #f9bf3b;">#f9bf3b</div>
+            <div class="block" style="background-color: #f9f9f9;">#f9f9f9</div>
+            <div class="block" style="background-color: #53687e;">#53687e</div>
+        </div>
+
+        <div class="darken"></div>
+
+        <!--  SEE ALSO: http://www.hexcolortool.com/2ECC73  &  https://coolors.co/  -->
+
+    </body>
+</html>
